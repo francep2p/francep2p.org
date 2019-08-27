@@ -1,0 +1,67 @@
+{{ partial "header" . }}
+
+<!-- Masthead -->
+<header class="masthead">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center justify-content-center text-center">
+            <div class="col-lg-10 align-self-end">
+                <img class="logo-center" src="/img/france_p2p_red_border.svg">
+                <h1 class="text-uppercase text-white font-weight-bold">{{ .Params.content.intro_text | markdownify }}</h1>
+            </div>
+            <div class="col-lg-8 align-self-baseline"><a class="btn btn-secondary btn-xl js-scroll-trigger" href="#chapters">{{ .Params.content.intro_button | markdownify }}</a></div>
+        </div>
+    </div>
+</header>
+<!-- Chapters Section -->
+<section class="page-section bg-light" id="chapters">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="mt-0">{{ .Params.content.chapters_title | markdownify }}</h2>
+                <hr class="divider my-4">
+                <br />
+            </div>
+        </div>
+        <div class="row">
+            {{ range where .Pages "Section" "chapter" }}
+            <div class="col-lg-6">
+                {{ partial "block_chapter" . }}
+            </div><!-- /.col -->
+            {{ end }}
+        </div><!-- /.row -->
+    </div>
+</section>
+
+<!-- Open new chapter Section -->
+<section class="page-section bg-secondary" id="new-chapter">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h2 class="mt-0 text-white">{{ .Params.content.caf_title | markdownify }}</h2>
+                <hr class="divider light my-4">
+                <br />
+                <h5 class="text-white">{{ .Params.content.caf_subtitle | markdownify }}</h5>
+                <p class="text-white mb-4">{{ .Params.content.caf_body | markdownify }}</p>
+                <a class="btn btn-secondary btn-xl js-scroll-trigger" href="http://crpt.fyi/parisp2p-cfp">{{ .Params.content.caf_button | markdownify }}</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Links Section -->
+<!--<section class="page-section" id="links">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <i class="fal fa-link fa-5x text-white mb-4"></i>
+                <h2 class="text-white mt-0">{{ .Params.content.links_title | markdownify }}</h2>
+                <hr class="divider light my-4">
+                <br />
+                <br />
+            </div>
+        </div>
+        {{ partial "links" . }}
+    </div>
+</section>-->
+{{ partial "footer" . }}

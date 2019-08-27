@@ -1,0 +1,19 @@
+{{ $image := index (.Resources.Match .Params.image) 0 }}
+<div class="block block-chapter">
+	<div class="block-img">
+		<img src="{{ $image.RelPermalink }}">
+	</div><!-- /.block-img -->
+	<a class="block-content" href="{{ .Params.Website_link }}">
+		<h4 class="block-title">{{.Title}}</h4>
+		<p class="block-subtitle">{{.Params.Subtitle}}</p>
+		<span class="block-info chapter-date"><i class="far fa-calendar-alt"></i>{{ .Params.Creation_date }}</span>
+		<span class="block-info chapter-location"><i class="far fa-map-marker"></i>{{ .Params.Location }}</span>
+		<span class="block-info chapter-website"><i class="far fa-globe"></i>{{ .Params.Website_link }}</span>
+	</a><!-- /.block-content -->
+	<div class="block-links">
+		<a href="{{ .Params.Meetup_link }}" class="btn btn-circle btn-meetup"><i class="fab fa-lg fa-meetup"></i></a>
+		<a href="{{ .Params.discord_link }}" class="btn btn-circle btn-discord"><i class="fab fa-lg fa-discord"></i></a>
+		<a href="{{ .Params.github_link }}" class="btn btn-circle btn-github"><i class="fab fa-lg fa-github"></i></a>
+		<a href="mailto:{{ .Params.email }}" class="btn btn-circle btn-secondary"><i class="far fa-lg fa-envelope"></i></a>
+	</div>
+</div><!-- /.block-chapter -->

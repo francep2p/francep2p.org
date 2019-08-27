@@ -1,0 +1,39 @@
+theme: francep2p
+baseURL: https://francep2p.org
+title: France P2P (& Cryptography)
+
+languageCode: en
+DefaultContentLanguage: en
+defaultContentLanguageInSubdir: true
+
+languages:
+  en:
+    languageName: English
+    params:
+      locale: en_GB
+      default_description: The French community interested in P2P & Cryptography technologies
+    menu:
+      main:
+        - name: Chapters
+          url: "/en/#chapters"
+          weight: -90
+        - name: Open a new chapter
+          url: "/en/#new-chapter"
+          weight: -80
+  fr:
+    languageName: French
+    params:
+      locale: fr_FR
+      default_description: La communauté française intéréssée par les technologies P2P et la Cryptographie
+    menu:
+      main:
+        - name: Chapites
+          url: "/fr/#chapritres"
+          weight: -90
+        - name: Ouvrir un nouveau chapitre
+          url: "/fr/#new-chapter"
+          weight: -90
+
+params:
+  default_featured_image: /img/france_p2p_thumbnail.jpg
+  googleAnalyticsId: UA-124224137-6

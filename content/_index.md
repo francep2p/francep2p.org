@@ -1,8 +1,8 @@
 ---
-title: The french community interested in P2P & Cryptography technologies
-description: The french community interested in P2P & Cryptography technologies
+title: The french community interested in all things P2P
+description: The french community interested in things P2P
 content:
-    intro_text: THE FRENCH COMMUNITY INTERESTED IN P2P & CRYPTOGRAPHY TECHNOLOGIES
+    intro_text: THE FRENCH COMMUNITY INTERESTED IN ALL THINGS P2P
     intro_button: Discover the chapters
     about_title: About the community
     about_body: Just a bunch of enthousiasts who wanted a place to talk, exchange last news and share ideas around P2P & Cryptography technologies in France

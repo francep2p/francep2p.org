@@ -1,11 +1,11 @@
 ---
-title: La communauté française intéréssée par les technologies P2P et la Cryptographie
-description: La communauté française intéréssée par les technologies P2P et la Cryptographie
+title: La communauté française intéréssée par tout ce qui touche au P2P
+description: La communauté française intéréssée par tout ce qui touche au P2P
 content:
-    intro_text: LA COMMUNAUTÉ FRANÇAISE INTÉRÉSSÉE PAR LES TECHNOLOGIES P2P ET LA CRYPTOGRAPHIE
+    intro_text: LA COMMUNAUTÉ FRANÇAISE INTÉRÉSSÉE PAR TOUT CE QUI TOUCHE AU P2P
     intro_button: Decouvrez les chapitres
     about_title: À propos de la communauté
-    about_body: Juste une bande d'enthousiastes qui souhaitaient un lieu pour discuter, échanger sur les dernières actualités et partager leurs idées autour des technologies P2P et Cryptographie à Paris
+    about_body: Juste une bande d'enthousiastes qui souhaitaient un lieu pour discuter, échanger sur les dernières actualités et partager leurs idées autour des technologies P2P et Cryptographie en France
     chapters_title: Chapitres
     caf_title: Envoyez vos sujets
     caf_subtitle: Vous avez un sujet à présenter ?
